@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1555198550 source:c:\users\sergi\desktop\tema - o clasã cu ... luminã\main.cpp
+	<iostream>
+	"BecReglabil.h"
+
+1555198653 source:c:\users\sergi\desktop\tema - o clasã cu ... luminã\src\becreglabil.cpp
+	"BecReglabil.h"
+	<iostream>
+
+1555197540 c:\users\sergi\desktop\tema - o clasã cu ... luminã\include\becreglabil.h
+
