@@ -14,7 +14,7 @@ class ManagerInstructori
     protected:
 
     private:
-        std::vector <Instructor> listaInstructori;
+        //std::vector <Instructor> listaInstructori;
 
 };
 
