@@ -25,7 +25,7 @@ void Instructor::setCodUnic()    // setter code
 {
 
     srand (time(NULL));
-    codUnic = rand() % 100 + 1;
+    codUnic = rand() % 1000 + 1;
     cout << codUnic << endl; // test
 }
 

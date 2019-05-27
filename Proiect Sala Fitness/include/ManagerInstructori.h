@@ -10,7 +10,7 @@ class ManagerInstructori
         virtual ~ManagerInstructori();
 
         void addInstructor();
-        void writeInstructor();
+        //friend std::ostream & operator << (std::ostream &out, const Instructor & John);
 
 
 

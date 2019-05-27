@@ -23,13 +23,17 @@ void ManagerInstructori::addInstructor()
 {
     Instructor John;
     listaInstructori.push_back(John);
+    ofstream write2file ("Lista Instructori.txt", ios::out | ios::app);
+    write2file << John.getNumeInstructor()<< " " << John.getOre()<< " " << John.getCodUnic()<< "\n";
+    write2file.close();
 
 }
+//ostream & operator << (std::ostream &out, const Instructor & obj);
+//	{
+//		out << John.numeInstructor << " " <<John.ore << "\n" << John.codUnic << std::endl;
+//		return out;
+//	}
 
-void ManagerInstructori::writeInstructor()
-{
-
-}
 
 
 // clasa pt add si stergere instructori

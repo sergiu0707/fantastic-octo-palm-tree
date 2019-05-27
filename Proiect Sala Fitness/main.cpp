@@ -21,7 +21,6 @@ int main()
             case 1:
                     ManagerInstructori instructor;
                     instructor.addInstructor();
-                    instructor.writeInstructor();
                     break;
 
             }
