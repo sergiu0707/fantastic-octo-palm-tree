@@ -9,14 +9,28 @@ using namespace std;
 
 Instructor::Instructor()
 {
+    setNumeInstructor();
+    setCodUnic();
+
+}
+
+void Instructor::setNumeInstructor() // setter name
+{
+
     cout << "Introduceti nume instructor" << endl;
     cin >> numeInstructor;
+}
+
+void Instructor::setCodUnic()    // setter code
+{
+
     srand (time(NULL));
     codUnic = rand() % 100 + 1;
     cout << codUnic << endl; // test
-
-
 }
+
+// metoda salvare
+// metoda stergere
 
 Instructor::~Instructor()
 {

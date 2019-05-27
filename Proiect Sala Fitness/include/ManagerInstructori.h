@@ -9,12 +9,13 @@ class ManagerInstructori
         ManagerInstructori();
         virtual ~ManagerInstructori();
 
+        void addInstructor();
+        void writeInstructor();
 
 
-    protected:
+
 
     private:
-        //std::vector <Instructor> listaInstructori;
 
 };
 

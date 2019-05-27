@@ -2,6 +2,7 @@
 #define INSTRUCTOR_H
 #include <string>
 #include <vector>
+#include "ManagerInstructori.h"
 
 
 class Instructor
@@ -10,6 +11,9 @@ class Instructor
         Instructor();
         virtual ~Instructor();
 
+        void setNumeInstructor ();
+        void setOre(short paramOre) {ore = paramOre;}
+        void setCodUnic ();
 
 
 

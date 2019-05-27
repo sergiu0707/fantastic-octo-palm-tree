@@ -16,25 +16,27 @@ int main()
         cout << "6. Iesire" << endl;
 
         cin >> indexMenu;
-
         switch (indexMenu)
-        {
-            case 1: Instructor john;
+            {
+            case 1:
+                    ManagerInstructori instructor;
+                    instructor.addInstructor();
+                    instructor.writeInstructor();
+                    break;
+
+            }
+
+
+
+
+
+
+
             // Ideea 1: add object john to "vector <Instructor> listaInstructori;" from class ManagerInstructori
             // OR
             // Ideea 2: move "vector <Instructor> listaInstructori;" from class ManagerInstructori to class "Instructor" then add object john -> also delete class ManagerInstructori.
-            break;
 
 
-
-
-
-
-
-
-
-            break;
-        }
 
 
 
