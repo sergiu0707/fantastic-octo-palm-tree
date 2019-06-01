@@ -12,9 +12,7 @@ class Instructor
         Instructor(std::string, short, short);
         virtual ~Instructor();
 
-        void setNumeInstructor ();
-        void setOre(short paramOre) {ore = paramOre;}
-        void setCodUnic ();
+
         std::string getNumeInstructor(){return numeInstructor;}
         short getOre(){return ore;}
         short getCodUnic(){return codUnic;}
@@ -28,7 +26,7 @@ class Instructor
 
     private:
         std::string numeInstructor;
-        short ore;
+        short ore = 0;
         short codUnic;
 
 

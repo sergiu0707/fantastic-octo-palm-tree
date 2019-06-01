@@ -1,13 +1,19 @@
 #ifndef MANAGERINSTRUCTORI_H
 #define MANAGERINSTRUCTORI_H
+#include "ManagerInstructori.h"
 #include "Instructor.h"
 #include <vector>
 
 class ManagerInstructori
+
 {
     public:
         ManagerInstructori();
         virtual ~ManagerInstructori();
+
+        void setNumeInstructor ();
+        void setOre(short paramOre) {ore = paramOre;}
+        void setCodUnic ();
 
         void addInstructor();
         void loadInstructor();
@@ -16,11 +22,16 @@ class ManagerInstructori
         void deleteInstructor();
 
 
-
+    protected:
+        static std::vector<Instructor>listaInstructori;
+        friend class ManagerClienti;
 
 
     private:
-        std::vector<Instructor>listaInstructori;
+
+        std::string numeInstructor;
+        short ore = 0;
+        short codUnic;
 
 };
 

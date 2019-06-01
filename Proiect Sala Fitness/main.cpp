@@ -1,12 +1,15 @@
 #include <iostream>
 #include "Instructor.h"
 #include "ManagerInstructori.h"
+#include "Client.h"
+#include "ManagerClienti.h"
 
 using namespace std;
 
 int main()
 {
-
+        ManagerInstructori instructor;
+        instructor.loadInstructor();
         int indexMenu;
         cout << "1. Adauga instructor" << endl;
         cout << "2. Sterge instructor" << endl;
@@ -21,8 +24,6 @@ int main()
             {
             case 1:
                 {
-                    ManagerInstructori instructor;
-                    instructor.loadInstructor();
                     instructor.addInstructor();
                 }
                     break;
@@ -30,14 +31,17 @@ int main()
            case 2:
                {
                     system("CLS");
-                    ManagerInstructori instructor;
-                    instructor.loadInstructor();
                     instructor.displayInstructor();
                     instructor.deleteInstructor();
                }
                     break;
-
-
+           case 4:
+            {
+                     system("CLS");
+                     ManagerClienti client;
+                     client.checkOreInstructor();
+            }
+                        break;
 
                     //
 

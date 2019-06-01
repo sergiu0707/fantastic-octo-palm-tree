@@ -3,9 +3,13 @@
 #include <iostream>
 #include <vector>
 #include <fstream>
+#include <stdlib.h>
+#include <time.h>
 
 
 using namespace std;
+
+vector<Instructor>ManagerInstructori::listaInstructori;
 
 ManagerInstructori::ManagerInstructori()
 {
@@ -15,6 +19,19 @@ ManagerInstructori::ManagerInstructori()
 ManagerInstructori::~ManagerInstructori()
 {
     //dtor
+}
+
+void ManagerInstructori::setNumeInstructor() // setter name
+{
+    cout << "Introduceti nume instructor" << endl;
+    cin >> numeInstructor;
+}
+
+void ManagerInstructori::setCodUnic()    // setter code
+{
+    srand (time(NULL));
+    codUnic = rand() % 1000 + 1;
+    cout << codUnic << endl; // test
 }
 
 
@@ -37,9 +54,10 @@ ifstream readFromFile("Lista Instructori.txt");
 
 void ManagerInstructori::addInstructor()
 {
-
-        // move methods from class instructor for getting info to class ManagerInstructor
-    Instructor Jack;
+         setNumeInstructor ();
+         //setOre(short paramOre) {ore = paramOre;}
+         setCodUnic ();
+    Instructor Jack{numeInstructor, ore, codUnic};
     listaInstructori.push_back(Jack);
     ofstream write2file ("Lista Instructori.txt", ios::out | ios::app);
     write2file << Jack.getNumeInstructor()<< " " << Jack.getOre()<< " " << Jack.getCodUnic()<< "\n";

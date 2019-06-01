@@ -24,30 +24,52 @@
 	"Instructor.h"
 	<vector>
 
-1558986083 source:c:\users\sergi\desktop\scoala it\proiect sala fitness\proiect sala fitness\src\instructor.cpp
+1559391500 source:c:\users\sergi\desktop\scoala it\proiect sala fitness\proiect sala fitness\src\instructor.cpp
 	"Instructor.h"
 	"ManagerInstructori.h"
 	<iostream>
-	<stdlib.h>
-	<time.h>
 
-1559066009 c:\users\sergi\desktop\scoala it\proiect sala fitness\proiect sala fitness\include\instructor.h
+1559392669 c:\users\sergi\desktop\scoala it\proiect sala fitness\proiect sala fitness\include\instructor.h
 	<string>
 	<vector>
 
-1559069586 c:\users\sergi\desktop\scoala it\proiect sala fitness\proiect sala fitness\include\managerinstructori.h
+1559396789 c:\users\sergi\desktop\scoala it\proiect sala fitness\proiect sala fitness\include\managerinstructori.h
+	"ManagerInstructori.h"
 	"Instructor.h"
 	<vector>
 
-1559069699 source:c:\users\sergi\desktop\scoala it\proiect sala fitness\proiect sala fitness\main.cpp
+1559395990 source:c:\users\sergi\desktop\scoala it\proiect sala fitness\proiect sala fitness\main.cpp
 	<iostream>
 	"Instructor.h"
 	"ManagerInstructori.h"
+	"Client.h"
+	"ManagerClienti.h"
 
-1559070839 source:c:\users\sergi\desktop\scoala it\proiect sala fitness\proiect sala fitness\src\managerinstructori.cpp
+1559396632 source:c:\users\sergi\desktop\scoala it\proiect sala fitness\proiect sala fitness\src\managerinstructori.cpp
 	"ManagerInstructori.h"
 	"Instructor.h"
 	<iostream>
 	<vector>
 	<fstream>
+	<stdlib.h>
+	<time.h>
+
+1559391942 source:c:\users\sergi\desktop\scoala it\proiect sala fitness\proiect sala fitness\src\client.cpp
+	"Client.h"
+
+1559392490 c:\users\sergi\desktop\scoala it\proiect sala fitness\proiect sala fitness\include\client.h
+	<string>
+	<vector>
+
+1559396663 source:c:\users\sergi\desktop\scoala it\proiect sala fitness\proiect sala fitness\src\managerclienti.cpp
+	"ManagerClienti.h"
+	"ManagerInstructori.h"
+	<iostream>
+	<fstream>
+
+1559395498 c:\users\sergi\desktop\scoala it\proiect sala fitness\proiect sala fitness\include\managerclienti.h
+	"Client.h"
+	"ManagerInstructori.h"
+	<string>
+	<vector>
 
