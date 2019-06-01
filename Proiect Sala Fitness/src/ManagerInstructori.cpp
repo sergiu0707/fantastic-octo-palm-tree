@@ -4,12 +4,12 @@
 #include <vector>
 #include <fstream>
 
+
 using namespace std;
 
 ManagerInstructori::ManagerInstructori()
 {
 
-// salvarea in fisier nume + cod prin metoda - in clasa MangerInstructori
 }
 
 ManagerInstructori::~ManagerInstructori()
@@ -17,30 +17,71 @@ ManagerInstructori::~ManagerInstructori()
     //dtor
 }
 
-vector<Instructor>listaInstructori;
+
+
+void ManagerInstructori::loadInstructor()
+{
+    string nume;
+    short ore;
+    short cod;
+
+ifstream readFromFile("Lista Instructori.txt");
+    while (readFromFile >> nume >> ore >> cod)
+    {
+
+       Instructor John{nume, ore, cod};
+       listaInstructori.push_back(John);
+    }
+}
+
 
 void ManagerInstructori::addInstructor()
 {
-    Instructor John;
-    listaInstructori.push_back(John);
+
+        // move methods from class instructor for getting info to class ManagerInstructor
+    Instructor Jack;
+    listaInstructori.push_back(Jack);
     ofstream write2file ("Lista Instructori.txt", ios::out | ios::app);
-    write2file << John.getNumeInstructor()<< " " << John.getOre()<< " " << John.getCodUnic()<< "\n";
+    write2file << Jack.getNumeInstructor()<< " " << Jack.getOre()<< " " << Jack.getCodUnic()<< "\n";
     write2file.close();
+    //cout << listaInstructori.size() << endl;
 
 }
-//ostream & operator << (std::ostream &out, const Instructor & obj);
-//	{
-//		out << John.numeInstructor << " " <<John.ore << "\n" << John.codUnic << std::endl;
-//		return out;
-//	}
+
+void ManagerInstructori::displayInstructor()
+{
+        cout << "Index" << " Nume Instructor            " << " Ore                  " << " Cod Unic " << endl;
+    for (int index = 0; index < listaInstructori.size(); index++)
+    {
+        cout << index << "      ";
+        cout << listaInstructori[index].getNumeInstructor() << "                      " << listaInstructori[index].getOre() << "                         " << listaInstructori[index].getCodUnic() << endl;
+    }
+}
+
+void ManagerInstructori::deleteInstructor()
+{
+    short index;
+    cout << "Alege indexul instructorului de sters" <<  endl;
+    cin >> index;
+    listaInstructori.erase (listaInstructori.begin()+index);
+    ofstream write2file ("Lista Instructori.txt");
+    for (int index = 0; index < listaInstructori.size(); index++)
+    {
+        cout << index << "      ";
+        cout << listaInstructori[index].getNumeInstructor() << "                      " << listaInstructori[index].getOre() << "                         " << listaInstructori[index].getCodUnic() << endl;
+
+        ofstream write2file ("Lista Instructori.txt", ios::out | ios::app);
+        write2file << listaInstructori[index].getNumeInstructor()<< " " << listaInstructori[index].getOre()<< " " << listaInstructori[index].getCodUnic()<< "\n";
+        write2file.close();
+    }
 
 
 
-// clasa pt add si stergere instructori
+}
 
 
-//  void  addToVector(Instructor param1)
-// {
-//     listaInstructori.push_back(param1);
-// }
+
+
+
+
 

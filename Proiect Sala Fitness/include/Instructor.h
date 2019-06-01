@@ -2,13 +2,14 @@
 #define INSTRUCTOR_H
 #include <string>
 #include <vector>
-#include "ManagerInstructori.h"
+
 
 
 class Instructor
 {
     public:
         Instructor();
+        Instructor(std::string, short, short);
         virtual ~Instructor();
 
         void setNumeInstructor ();
@@ -29,6 +30,7 @@ class Instructor
         std::string numeInstructor;
         short ore;
         short codUnic;
+
 
 };
 

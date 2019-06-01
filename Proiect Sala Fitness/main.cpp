@@ -14,16 +14,42 @@ int main()
         cout << "4. Adauga client" << endl;
         cout << "5. Sterge client" << endl;
         cout << "6. Iesire" << endl;
+        cout << endl;
 
         cin >> indexMenu;
         switch (indexMenu)
             {
             case 1:
+                {
                     ManagerInstructori instructor;
+                    instructor.loadInstructor();
                     instructor.addInstructor();
+                }
                     break;
 
-            }
+           case 2:
+               {
+                    system("CLS");
+                    ManagerInstructori instructor;
+                    instructor.loadInstructor();
+                    instructor.displayInstructor();
+                    instructor.deleteInstructor();
+               }
+                    break;
+
+
+
+                    //
+
+            //case 2:
+
+
+            //default:
+
+
+
+       }
+
 
 
 

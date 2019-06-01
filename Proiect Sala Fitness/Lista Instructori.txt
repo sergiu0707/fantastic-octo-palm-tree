@@ -1,6 +1,8 @@
-asdasd -528 23
-Sergiu -528 63
-asdadsad -528 76
-Serggggg -528 18
-asdas -528 529
-asdasd -528 287
+Sergiu0 560 97
+Sergiu1 -560 97
+Sergiu2 -560 123
+Sergiu4 -560 123
+Sergiu5 -560 123
+Sergiu6 -560 123
+Sergiu7 -560 123
+Sergiu -560 659

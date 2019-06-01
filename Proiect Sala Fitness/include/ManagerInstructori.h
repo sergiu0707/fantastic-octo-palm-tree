@@ -10,12 +10,17 @@ class ManagerInstructori
         virtual ~ManagerInstructori();
 
         void addInstructor();
-        //friend std::ostream & operator << (std::ostream &out, const Instructor & John);
+        void loadInstructor();
+
+        void displayInstructor();
+        void deleteInstructor();
+
 
 
 
 
     private:
+        std::vector<Instructor>listaInstructori;
 
 };
 
