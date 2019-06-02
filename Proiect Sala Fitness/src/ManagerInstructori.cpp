@@ -1,5 +1,6 @@
 #include "ManagerInstructori.h"
 #include "Instructor.h"
+#include<iomanip>
 #include <iostream>
 #include <vector>
 #include <fstream>
@@ -25,13 +26,14 @@ void ManagerInstructori::setNumeInstructor() // setter name
 {
     cout << "Introduceti nume instructor" << endl;
     cin >> numeInstructor;
+    system("CLS");
+
 }
 
 void ManagerInstructori::setCodUnic()    // setter cod unic
 {
     srand (time(NULL));
     codUnic = rand() % 1000 + 1;
-    cout << codUnic << endl; // test
 }
 
 
@@ -59,18 +61,18 @@ void ManagerInstructori::addInstructor()       // add instructor + write to file
          setNumeInstructor ();
          setCodUnic ();
          Instructor Jack{numeInstructor, ore, codUnic};
-
     listaInstructori.push_back(Jack);
     writeInstructor();
+    cout << "Instructorul a fost adaugat" << endl;
+    cout << "Alegeti o alta optiune" << endl;
 }
 
 void ManagerInstructori::displayInstructor()    // display instructor list
 {
-        cout << "Index" << " Nume Instructor            " << " Ore                  " << " Cod Unic " << endl;
+        cout << "Index" << setw(25) << "Nume Instructor" << setw(25) << "Ore" << setw(25) << "Cod Unic" << endl;
     for (int index = 0; index < listaInstructori.size(); index++)
     {
-        cout << index << "      ";
-        cout << listaInstructori[index].getNumeInstructor() << "                      " << listaInstructori[index].getOre() << "                         " << listaInstructori[index].getCodUnic() << endl;
+        cout << index << setw(25) << listaInstructori[index].getNumeInstructor() << setw(25) << listaInstructori[index].getOre() << setw(25) << listaInstructori[index].getCodUnic() << endl;
     }
 }
 
@@ -82,6 +84,9 @@ void ManagerInstructori::deleteInstructor()     // display instr + delete + upda
     cin >> index;
     listaInstructori.erase (listaInstructori.begin()+index);
     writeInstructor();
+    system("CLS");
+    cout << "Instructorul a fost sters" << endl;
+    cout << "Alegeti o alta optiune" << endl;
 }
 
 

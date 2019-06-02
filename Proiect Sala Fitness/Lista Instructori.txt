@@ -1,4 +1,7 @@
-Instructor1 5 640
-Instructor2 2 676
-Instructor3 5 695
-Instructor4 0 767
+Instructor1 7 640
+Instructor2 5 676
+Instructor3 13 695
+Instructor4 11 767
+Instructor5 3 827
+Instructor6 5 912
+Instructor7 8 154

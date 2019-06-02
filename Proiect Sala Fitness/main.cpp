@@ -16,6 +16,8 @@ int main()
 
 
         int indexMenu;
+       do
+        {
         cout << "1. Adauga instructor" << endl;
         cout << "2. Sterge instructor" << endl;
         cout << "3. Afiseaza ore instructor" << endl;
@@ -24,15 +26,21 @@ int main()
         cout << "6. Iesire" << endl;
         cout << endl;
 
+
         cin >> indexMenu;
+          while (indexMenu < 1 || indexMenu > 6)
+                {
+                    cout << "Va rugam alegeti o optiune valida" << endl;
+                    cin >>indexMenu;
+                }
         switch (indexMenu)
             {
             case 1:
                 {
+                    system("CLS");
                     instructor.addInstructor();
                 }
                     break;
-
            case 2:
                {
                     system("CLS");
@@ -41,6 +49,7 @@ int main()
                     break;
            case 3:
                 {
+                    system("CLS");
                     client.info();
                 }
                     break;
@@ -57,35 +66,8 @@ int main()
                 client.deleteClient();
             }
                         break;
-
-
-
-
-                    //
-
-            //case 2:
-
-
-            //default:
-
-
-
-       }
-
-
-
-
-
-
-
-
-            // Ideea 1: add object john to "vector <Instructor> listaInstructori;" from class ManagerInstructori
-            // OR
-            // Ideea 2: move "vector <Instructor> listaInstructori;" from class ManagerInstructori to class "Instructor" then add object john -> also delete class ManagerInstructori.
-
-
-
-
+            }
+        }while (indexMenu != 6);
 
 
        return 0;

@@ -58,8 +58,10 @@ void ManagerClienti::displayClients()       // display client list from vector
 
 void ManagerClienti::setNumeClient() // setter name
 {
+
     cout << "Introduceti nume Client" << endl;
     cin >> numeClient;
+    system("CLS");
 }
 
 void ManagerClienti::setCategorie() // setter categorie
@@ -70,7 +72,11 @@ void ManagerClienti::setCategorie() // setter categorie
     cout << "3. Student" << endl;
     cout << "0. Revenire la ecranunl anterior" << endl;
     short index = 0;
+    do
+    {
     cin >> index;
+    cout << "Optiune invalida" << endl;
+
     switch (index)
     {
         {
@@ -86,15 +92,20 @@ void ManagerClienti::setCategorie() // setter categorie
             case 3: categorie = "Student";
         }
             break;
-            // default
+
+            case 0: break;
     }
+    }while (index < 0 || index > 3);
+
+    system("CLS");
 }
+
 
 void ManagerClienti::setOreClient()     // setter ore
 {
     cout << "Precizati numarul de ore/saptamana dorit - intre 1 si 5 ore" << endl;
     cin >> oreClient;
-    while (oreClient < 1 || oreClient > 5 || (isalpha(oreClient)))
+    while (oreClient < 1 || oreClient > 5 || !cin)
     {
         cout << "Precizati un numar de ore/saptamana intre 1 si 5" << endl;
         cin >> oreClient;
@@ -102,7 +113,7 @@ void ManagerClienti::setOreClient()     // setter ore
         cin.ignore(100, '\n');
         // improve imput validation - 3f is passing
     }
-
+    system("CLS");
 
 }
 
@@ -146,12 +157,15 @@ validate:
                 cout << "Abonament inregistrat" << endl;
                 ManagerInstructori::listaInstructori[index].setOre(totalOre);
                 instructorIndex = ManagerInstructori::listaInstructori[index].getCodUnic();
-                cout << ManagerInstructori::listaInstructori[index].getOre() << endl; // test
+                system("pause");
+                system("CLS");
+                //cout << ManagerInstructori::listaInstructori[index].getOre() << endl; // test
 
 }
 
 void ManagerClienti::addClient()        // add client
 {
+
          setNumeClient();
          setCategorie();
          setOreClient();
@@ -182,6 +196,10 @@ void ManagerClienti::displayInstructor()    // display instructor list - maybe d
     cin >> index;
     listaClienti.erase (listaClienti.begin()+index);
     writeClients();
+    cout << "Clientul a fost sters" << endl;
+    system("pause");
+    system("CLS");
+
  }
 
   void ManagerClienti::info()
@@ -203,6 +221,8 @@ void ManagerClienti::displayInstructor()    // display instructor list - maybe d
                 cout << setw(25) << listaClienti[index2].getNumeClient() << setw(45) << listaClienti[index2].getCategorie() << setw(24) << listaClienti[index2].getOreClient() << endl;
           }
         }
+    system("pause");
+    system("CLS");
   }
 
 
