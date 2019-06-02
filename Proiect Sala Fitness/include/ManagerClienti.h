@@ -24,7 +24,11 @@ class ManagerClienti
         void loadClients();
         void displayClients();
         void writeClients();
-        void displayInstructor();
+        void displayInstructor(); // maybe delete
+        void deleteClient();
+
+        void info();
+
 
 
 

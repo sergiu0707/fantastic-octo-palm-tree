@@ -1,1 +1,4 @@
-serg Elev 4 430
+Mark Adult 4 640
+John Elev 1 640
+Anthony Student 5 695
+Jack Student 2 676

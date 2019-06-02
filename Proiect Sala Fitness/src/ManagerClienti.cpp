@@ -3,6 +3,7 @@
 #include <algorithm>
 #include <iostream>
 #include <fstream>
+#include <iomanip>
 using namespace std;
 
 ManagerClienti::ManagerClienti()
@@ -36,8 +37,8 @@ void ManagerClienti::displayClients()       // display client list from vector
 {
     for (int index = 0; index < listaClienti.size(); index++)
         {
-            cout << index << "      ";
-            cout << listaClienti[index].getNumeClient() << "                      " << listaClienti[index].getCategorie() << "                         " << listaClienti[index].getOreClient() << listaClienti[index].getInstructorIndex() << endl;
+            cout << index << setw(15);
+            cout << listaClienti[index].getNumeClient() << setw(15) << listaClienti[index].getCategorie() << setw(15) << listaClienti[index].getOreClient() << setw(15) << listaClienti[index].getInstructorIndex() << endl;
         }
 
 }
@@ -110,15 +111,15 @@ void ManagerClienti::setInstructorIndex()   // tie with instructor index + updat
     int index;
     short ore;
     cout << "Selectati Instructorul " << endl;
-    cout << "Index " << "   Nume Instructor            " << " Ore                  " << " Cod Unic " << endl;
+    cout << "Index" << setw(18) << "Nume Instructor" << setw(13) << "Ore" << setw(15) << "Cod Unic" << endl;
             for (int index = 0; index < ManagerInstructori::listaInstructori.size(); index++)
                 {
                     if (ManagerInstructori::listaInstructori[index].getOre() > 40)
                         {
                             continue;
                         }
-                cout << index << "      ";
-                cout << ManagerInstructori::listaInstructori[index].getNumeInstructor() << "                      " << ManagerInstructori::listaInstructori[index].getOre() << "                         " << ManagerInstructori::listaInstructori[index].getCodUnic() << endl;
+                cout << index << setw(15);
+                cout << ManagerInstructori::listaInstructori[index].getNumeInstructor() << setw(19) << ManagerInstructori::listaInstructori[index].getOre() << setw(13) << ManagerInstructori::listaInstructori[index].getCodUnic() << endl;
                 }
 validate:
     cin >> index;
@@ -130,12 +131,12 @@ validate:
         system("CLS");
         cout << "Ne pare rau. Acest instructor nu mai are locuri disponibile." << endl; // resetare displayInstructor - index
         cout << "Alegeti un alt instructor." << endl;
-        cout << "Index " << "   Nume Instructor            " << " Ore                  " << " Cod Unic " << endl;
+        cout << "Index" << setw(15) << "Nume Instructor" << setw(15) << "Ore" << setw(15) << "Cod Unic" << endl;
                         for (int index2 = 0; index2 < ManagerInstructori::listaInstructori.size(); index2++)
                 {
                     if (index2 == index || ManagerInstructori::listaInstructori[index2].getOre() > 40) continue;
-                       cout << index2 << "      ";
-                       cout << ManagerInstructori::listaInstructori[index2].getNumeInstructor() << "                      " << ManagerInstructori::listaInstructori[index2].getOre() << "                         " << ManagerInstructori::listaInstructori[index2].getCodUnic() << endl;
+                       cout << index2 << setw(15);
+                       cout << ManagerInstructori::listaInstructori[index2].getNumeInstructor() << setw(15) << ManagerInstructori::listaInstructori[index2].getOre() << setw(15) << ManagerInstructori::listaInstructori[index2].getCodUnic() << endl;
                 }
         goto validate;
     }
@@ -163,12 +164,47 @@ void ManagerClienti::addClient()        // add client
 
 }
 
-void ManagerClienti::displayInstructor()    // display instructor list
+void ManagerClienti::displayInstructor()    // display instructor list - maybe delete
 {
-        cout << "Index" << " Nume Instructor            " << " Ore                  " << " Cod Unic " << endl;
+        cout << "Index" << setw(15) << "Nume Instructor" << setw(15) << "Ore" << setw(15) << "Cod Unic" << endl;
     for (int index = 0; index < ManagerInstructori::listaInstructori.size(); index++)
     {
-        cout << index << "      ";
-        cout << ManagerInstructori::listaInstructori[index].getNumeInstructor() << "                      " << ManagerInstructori::listaInstructori[index].getOre() << "                         " << ManagerInstructori::listaInstructori[index].getCodUnic() << endl;
+        cout << index << setw(18);
+        cout << ManagerInstructori::listaInstructori[index].getNumeInstructor() << setw(15) << ManagerInstructori::listaInstructori[index].getOre() << setw(15) << ManagerInstructori::listaInstructori[index].getCodUnic() << endl;
     }
+}
+
+ void ManagerClienti::deleteClient()
+ {
+    short index;
+    cout << "Alege indexul clientului de sters" <<  endl;
+    displayClients();
+    cin >> index;
+    listaClienti.erase (listaClienti.begin()+index);
+    writeClients();
+ }
+
+  void ManagerClienti::info()
+  {
+      int index;
+      int index2;
+      cout << setw(15) <<"Instructor" << setw(35) <<  "Ore Total Instructor" << setw(22) << "Categorie"<< setw(24) << "Ore Client" <<endl;
+      for (index = 0; index < ManagerInstructori::listaInstructori.size(); index++)
+        {
+             cout << setw(15) << ManagerInstructori::listaInstructori[index].getNumeInstructor() << setw(35) << ManagerInstructori::listaInstructori[index].getOre()<< endl;
+             //cout << setw(25) << "Client" << endl;
+          for (index2 = 0; index2 < listaClienti.size(); index2++)
+          {
+
+            if (ManagerInstructori::listaInstructori[index].getCodUnic() != listaClienti[index2].getInstructorIndex())
+            {
+                continue;
+            }
+                cout << setw(25) << listaClienti[index2].getNumeClient() << setw(45) << listaClienti[index2].getCategorie() << setw(24) << listaClienti[index2].getOreClient() << endl;
+          }
+        }
+  }
+
+
+
 

@@ -13,6 +13,8 @@ int main()
         instructor.loadInstructor();
         client.loadClients();
 
+
+
         int indexMenu;
         cout << "1. Adauga instructor" << endl;
         cout << "2. Sterge instructor" << endl;
@@ -37,6 +39,11 @@ int main()
                     instructor.deleteInstructor();
                }
                     break;
+           case 3:
+                {
+                    client.info();
+                }
+                    break;
            case 4:
             {
                      system("CLS");
@@ -44,6 +51,15 @@ int main()
                      instructor.writeInstructor();
             }
                         break;
+           case 5:
+            {
+                system("CLS");
+                client.deleteClient();
+            }
+                        break;
+
+
+
 
                     //
 
