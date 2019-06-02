@@ -1,2 +1,0 @@
-while for main menu -> while(index !=0) -> case 0 exit;
-vector < livestock*> -> listalivestock
