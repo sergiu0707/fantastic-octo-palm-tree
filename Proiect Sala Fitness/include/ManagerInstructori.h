@@ -21,6 +21,9 @@ class ManagerInstructori
         void displayInstructor();
         void deleteInstructor();
 
+        void writeInstructor();
+
+
 
     protected:
         static std::vector<Instructor>listaInstructori;

@@ -9,7 +9,10 @@ using namespace std;
 int main()
 {
         ManagerInstructori instructor;
+        ManagerClienti client;
         instructor.loadInstructor();
+        client.loadClients();
+
         int indexMenu;
         cout << "1. Adauga instructor" << endl;
         cout << "2. Sterge instructor" << endl;
@@ -31,15 +34,14 @@ int main()
            case 2:
                {
                     system("CLS");
-                    instructor.displayInstructor();
                     instructor.deleteInstructor();
                }
                     break;
            case 4:
             {
                      system("CLS");
-                     ManagerClienti client;
-                     client.checkOreInstructor();
+                     client.addClient();
+                     instructor.writeInstructor();
             }
                         break;
 

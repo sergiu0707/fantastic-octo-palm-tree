@@ -34,10 +34,14 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/Client.h" />
 		<Unit filename="include/Instructor.h" />
+		<Unit filename="include/ManagerClienti.h" />
 		<Unit filename="include/ManagerInstructori.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/Client.cpp" />
 		<Unit filename="src/Instructor.cpp" />
+		<Unit filename="src/ManagerClienti.cpp" />
 		<Unit filename="src/ManagerInstructori.cpp" />
 		<Extensions>
 			<code_completion />

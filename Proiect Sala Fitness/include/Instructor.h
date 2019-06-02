@@ -16,6 +16,7 @@ class Instructor
         std::string getNumeInstructor(){return numeInstructor;}
         short getOre(){return ore;}
         short getCodUnic(){return codUnic;}
+        void setOre(short _ore) {ore = _ore;}
 
 
 

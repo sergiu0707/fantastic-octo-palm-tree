@@ -27,7 +27,7 @@ void ManagerInstructori::setNumeInstructor() // setter name
     cin >> numeInstructor;
 }
 
-void ManagerInstructori::setCodUnic()    // setter code
+void ManagerInstructori::setCodUnic()    // setter cod unic
 {
     srand (time(NULL));
     codUnic = rand() % 1000 + 1;
@@ -36,7 +36,7 @@ void ManagerInstructori::setCodUnic()    // setter code
 
 
 
-void ManagerInstructori::loadInstructor()
+void ManagerInstructori::loadInstructor()       // read instructor from file
 {
     string nume;
     short ore;
@@ -52,21 +52,19 @@ ifstream readFromFile("Lista Instructori.txt");
 }
 
 
-void ManagerInstructori::addInstructor()
+
+
+void ManagerInstructori::addInstructor()       // add instructor + write to file
 {
          setNumeInstructor ();
-         //setOre(short paramOre) {ore = paramOre;}
          setCodUnic ();
-    Instructor Jack{numeInstructor, ore, codUnic};
-    listaInstructori.push_back(Jack);
-    ofstream write2file ("Lista Instructori.txt", ios::out | ios::app);
-    write2file << Jack.getNumeInstructor()<< " " << Jack.getOre()<< " " << Jack.getCodUnic()<< "\n";
-    write2file.close();
-    //cout << listaInstructori.size() << endl;
+         Instructor Jack{numeInstructor, ore, codUnic};
 
+    listaInstructori.push_back(Jack);
+    writeInstructor();
 }
 
-void ManagerInstructori::displayInstructor()
+void ManagerInstructori::displayInstructor()    // display instructor list
 {
         cout << "Index" << " Nume Instructor            " << " Ore                  " << " Cod Unic " << endl;
     for (int index = 0; index < listaInstructori.size(); index++)
@@ -76,26 +74,29 @@ void ManagerInstructori::displayInstructor()
     }
 }
 
-void ManagerInstructori::deleteInstructor()
+void ManagerInstructori::deleteInstructor()     // display instr + delete + update file
 {
     short index;
     cout << "Alege indexul instructorului de sters" <<  endl;
+    displayInstructor();
     cin >> index;
     listaInstructori.erase (listaInstructori.begin()+index);
-    ofstream write2file ("Lista Instructori.txt");
-    for (int index = 0; index < listaInstructori.size(); index++)
-    {
-        cout << index << "      ";
-        cout << listaInstructori[index].getNumeInstructor() << "                      " << listaInstructori[index].getOre() << "                         " << listaInstructori[index].getCodUnic() << endl;
+    writeInstructor();
+}
 
+
+    void ManagerInstructori::writeInstructor()
+{
+    ofstream write2file ("Lista Instructori.txt");
+        for (int index = 0; index < listaInstructori.size(); index++)
+    {
         ofstream write2file ("Lista Instructori.txt", ios::out | ios::app);
         write2file << listaInstructori[index].getNumeInstructor()<< " " << listaInstructori[index].getOre()<< " " << listaInstructori[index].getCodUnic()<< "\n";
         write2file.close();
     }
 
-
-
 }
+
 
 
 
