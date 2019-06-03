@@ -28,12 +28,7 @@ class ManagerClienti
         void deleteClient();
 
         void info();
-
-
-
-
-
-
+        void validate();
 
 
     private:

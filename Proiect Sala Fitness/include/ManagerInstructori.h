@@ -22,6 +22,7 @@ class ManagerInstructori
         void deleteInstructor();
 
         void writeInstructor();
+        void validate();
 
 
 

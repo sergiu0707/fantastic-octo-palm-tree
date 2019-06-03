@@ -6,6 +6,7 @@
 #include <fstream>
 #include <stdlib.h>
 #include <time.h>
+#include <algorithm>
 
 
 using namespace std;
@@ -82,24 +83,36 @@ void ManagerInstructori::deleteInstructor()     // display instr + delete + upda
     cout << "Alege indexul instructorului de sters" <<  endl;
     displayInstructor();
     cin >> index;
+    while(index >= listaInstructori.size() || index < 0 || !cin)
+    {
+        validate();
+        cout << "Alegeti un index valid" << endl;
+        cin >> index;
+    }
     listaInstructori.erase (listaInstructori.begin()+index);
     writeInstructor();
+    cout << "Instructorul " << index <<" a fost sters" << endl;
+    system("pause");
     system("CLS");
-    cout << "Instructorul a fost sters" << endl;
-    cout << "Alegeti o alta optiune" << endl;
 }
 
 
     void ManagerInstructori::writeInstructor()
 {
     ofstream write2file ("Lista Instructori.txt");
-        for (int index = 0; index < listaInstructori.size(); index++)
+    for (int index = 0; index < listaInstructori.size(); index++)
     {
         ofstream write2file ("Lista Instructori.txt", ios::out | ios::app);
         write2file << listaInstructori[index].getNumeInstructor()<< " " << listaInstructori[index].getOre()<< " " << listaInstructori[index].getCodUnic()<< "\n";
         write2file.close();
     }
 
+}
+
+void ManagerInstructori::validate()
+{
+    cin.clear();
+    cin.ignore(200, '\n');
 }
 
 

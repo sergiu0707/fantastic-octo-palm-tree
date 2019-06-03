@@ -33,19 +33,19 @@
 	<string>
 	<vector>
 
-1559475296 c:\users\sergi\desktop\scoala it\proiect sala fitness\proiect sala fitness\include\managerinstructori.h
+1559579460 c:\users\sergi\desktop\scoala it\proiect sala fitness\proiect sala fitness\include\managerinstructori.h
 	"ManagerInstructori.h"
 	"Instructor.h"
 	<vector>
 
-1559492940 source:c:\users\sergi\desktop\scoala it\proiect sala fitness\proiect sala fitness\main.cpp
+1559585919 source:c:\users\sergi\desktop\scoala it\proiect sala fitness\proiect sala fitness\main.cpp
 	<iostream>
 	"Instructor.h"
 	"ManagerInstructori.h"
 	"Client.h"
 	"ManagerClienti.h"
 
-1559493408 source:c:\users\sergi\desktop\scoala it\proiect sala fitness\proiect sala fitness\src\managerinstructori.cpp
+1559579975 source:c:\users\sergi\desktop\scoala it\proiect sala fitness\proiect sala fitness\src\managerinstructori.cpp
 	"ManagerInstructori.h"
 	"Instructor.h"
 	<iomanip>
@@ -54,6 +54,7 @@
 	<fstream>
 	<stdlib.h>
 	<time.h>
+	<algorithm>
 
 1559414251 source:c:\users\sergi\desktop\scoala it\proiect sala fitness\proiect sala fitness\src\client.cpp
 	"Client.h"
@@ -62,15 +63,16 @@
 	<string>
 	<vector>
 
-1559495010 source:c:\users\sergi\desktop\scoala it\proiect sala fitness\proiect sala fitness\src\managerclienti.cpp
+1559586004 source:c:\users\sergi\desktop\scoala it\proiect sala fitness\proiect sala fitness\src\managerclienti.cpp
 	"ManagerClienti.h"
 	"ManagerInstructori.h"
 	<algorithm>
 	<iostream>
 	<fstream>
 	<iomanip>
+	<string>
 
-1559489248 c:\users\sergi\desktop\scoala it\proiect sala fitness\proiect sala fitness\include\managerclienti.h
+1559579811 c:\users\sergi\desktop\scoala it\proiect sala fitness\proiect sala fitness\include\managerclienti.h
 	"Client.h"
 	"ManagerInstructori.h"
 	<string>

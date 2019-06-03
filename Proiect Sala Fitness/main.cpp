@@ -64,6 +64,7 @@ int main()
             {
                 system("CLS");
                 client.deleteClient();
+                instructor.writeInstructor();
             }
                         break;
             }

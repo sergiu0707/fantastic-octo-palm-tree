@@ -4,6 +4,7 @@
 #include <iostream>
 #include <fstream>
 #include <iomanip>
+#include <string>
 using namespace std;
 
 ManagerClienti::ManagerClienti()
@@ -70,12 +71,16 @@ void ManagerClienti::setCategorie() // setter categorie
     cout << "1. Adult" << endl;
     cout << "2. Elev" << endl;
     cout << "3. Student" << endl;
-    cout << "0. Revenire la ecranunl anterior" << endl;
-    short index = 0;
-    do
-    {
+    short index;
     cin >> index;
-    cout << "Optiune invalida" << endl;
+
+    while (index < 1 || index > 3 || !cin)
+    {
+        validate();
+        cout << "Optiune invalida" << endl;
+        cin >> index;
+    }
+
 
     switch (index)
     {
@@ -93,9 +98,9 @@ void ManagerClienti::setCategorie() // setter categorie
         }
             break;
 
-            case 0: break;
+
     }
-    }while (index < 0 || index > 3);
+
 
     system("CLS");
 }
@@ -119,12 +124,37 @@ void ManagerClienti::setOreClient()     // setter ore
 
 void ManagerClienti::setInstructorIndex()   // tie with instructor index + update Instructor hours
 {
-    int index;
+    int index = 0;
+    int index3;
     short ore;
+    short maxOre = 0;
+
+    // if ManagerInstructori::listaInstructori.get
+
+     for (int index4 = 0; index4 < ManagerInstructori::listaInstructori.size(); index4++)
+                {
+                    maxOre = maxOre + ManagerInstructori::listaInstructori[index4].getOre();
+                }
+if (maxOre * ManagerInstructori::listaInstructori.size()  >= 40 * ManagerInstructori::listaInstructori.size())
+{
+
+    system("CLS");
+    cout << "Ne pare rau. Toti instructorii nostri sunt ocupati. Lasati-ne date de contact si va vom contacta de indata ce apare o pozitie libera!" << endl;
+    cout << "Nume / Email / Telefon" << endl;
+    string contact;
+    cin >> contact;
+    ofstream contact2file ("Contact Clienti.txt", ios::out | ios::app);
+    contact2file << contact << endl;
+    contact2file.close();
+    system("CLS");
+    return;
+}
+
     cout << "Selectati Instructorul " << endl;
     cout << "Index" << setw(18) << "Nume Instructor" << setw(13) << "Ore" << setw(15) << "Cod Unic" << endl;
-            for (int index = 0; index < ManagerInstructori::listaInstructori.size(); index++)
+            for (index = 0; index < ManagerInstructori::listaInstructori.size(); index++)
                 {
+
                     if (ManagerInstructori::listaInstructori[index].getOre() > 40)
                         {
                             continue;
@@ -132,9 +162,17 @@ void ManagerClienti::setInstructorIndex()   // tie with instructor index + updat
                 cout << index << setw(15);
                 cout << ManagerInstructori::listaInstructori[index].getNumeInstructor() << setw(19) << ManagerInstructori::listaInstructori[index].getOre() << setw(13) << ManagerInstructori::listaInstructori[index].getCodUnic() << endl;
                 }
-validate:
-    cin >> index;
-    ore = ManagerInstructori::listaInstructori[index].getOre();
+valid:
+
+    cin >> index3;
+    while (index3 > index || index3 < 0 || !cin)
+    {
+        validate();
+        cout << "Alegeti un index valid" << endl;
+        cin >> index3;
+
+    }
+    ore = ManagerInstructori::listaInstructori[index3].getOre();
     short totalOre = ore + oreClient;
 
         if(totalOre >= 40)
@@ -145,22 +183,17 @@ validate:
         cout << "Index" << setw(15) << "Nume Instructor" << setw(15) << "Ore" << setw(15) << "Cod Unic" << endl;
                         for (int index2 = 0; index2 < ManagerInstructori::listaInstructori.size(); index2++)
                 {
-                    if (index2 == index || ManagerInstructori::listaInstructori[index2].getOre() > 40) continue;
+                    if (index2 == index3 || ManagerInstructori::listaInstructori[index2].getOre() > 40) continue;
                        cout << index2 << setw(15);
                        cout << ManagerInstructori::listaInstructori[index2].getNumeInstructor() << setw(15) << ManagerInstructori::listaInstructori[index2].getOre() << setw(15) << ManagerInstructori::listaInstructori[index2].getCodUnic() << endl;
                 }
-        goto validate;
+        goto valid;
     }
-
-
-
-                cout << "Abonament inregistrat" << endl;
-                ManagerInstructori::listaInstructori[index].setOre(totalOre);
-                instructorIndex = ManagerInstructori::listaInstructori[index].getCodUnic();
-                system("pause");
-                system("CLS");
-                //cout << ManagerInstructori::listaInstructori[index].getOre() << endl; // test
-
+        cout << "Abonament inregistrat" << endl;
+        ManagerInstructori::listaInstructori[index3].setOre(totalOre);
+        instructorIndex = ManagerInstructori::listaInstructori[index3].getCodUnic();
+        system("pause");
+        system("CLS");
 }
 
 void ManagerClienti::addClient()        // add client
@@ -190,16 +223,32 @@ void ManagerClienti::displayInstructor()    // display instructor list - maybe d
 
  void ManagerClienti::deleteClient()
  {
-    short index;
+    short index = 0;
     cout << "Alege indexul clientului de sters" <<  endl;
     displayClients();
+
     cin >> index;
+    while(index >= listaClienti.size() || index < 0 || !cin)
+        {
+            validate();
+            cout << "Alegeti un index valid" << endl;
+            cin >> index;
+        }
+    short codClientInstructor = listaClienti[index].getInstructorIndex();
+        for (int index2 = 0; index2 < ManagerInstructori::listaInstructori.size(); index2++)
+        {
+            if (ManagerInstructori::listaInstructori[index2].getCodUnic() == codClientInstructor)
+            {
+                short ore = ManagerInstructori::listaInstructori[index2].getOre() - (listaClienti[index].getOreClient());
+                ManagerInstructori::listaInstructori[index2].setOre(ore);
+            }
+        }
     listaClienti.erase (listaClienti.begin()+index);
     writeClients();
-    cout << "Clientul a fost sters" << endl;
+
+    cout << "Clientul " << index << " a fost sters" << endl;
     system("pause");
     system("CLS");
-
  }
 
   void ManagerClienti::info()
@@ -224,6 +273,12 @@ void ManagerClienti::displayInstructor()    // display instructor list - maybe d
     system("pause");
     system("CLS");
   }
+
+  void ManagerClienti::validate()
+{
+    cin.clear();
+    cin.ignore(200, '\n');
+}
 
 
 
