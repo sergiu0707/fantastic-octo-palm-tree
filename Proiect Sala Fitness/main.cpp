@@ -28,8 +28,10 @@ int main()
 
 
         cin >> indexMenu;
-          while (indexMenu < 1 || indexMenu > 6)
+          while (indexMenu < 1 || indexMenu > 6 || !cin)
                 {
+                    cin.clear();
+                    cin.ignore(200, '\n');
                     cout << "Va rugam alegeti o optiune valida" << endl;
                     cin >>indexMenu;
                 }

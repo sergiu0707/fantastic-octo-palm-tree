@@ -12,10 +12,7 @@ class ManagerClienti
     public:
         ManagerClienti();
         virtual ~ManagerClienti();
-        void checkOreInstructor(); // implement
         void setNumeClient();
-        void setEmail();
-        void setTelefon();
         void setOreClient();
         void addClient();
         void setCategorie();
@@ -24,7 +21,7 @@ class ManagerClienti
         void loadClients();
         void displayClients();
         void writeClients();
-        void displayInstructor(); // maybe delete
+        void displayInstructor();
         void deleteClient();
 
         void info();
@@ -34,8 +31,6 @@ class ManagerClienti
     private:
         std::vector<Client>listaClienti;
         std::string numeClient;
-        std::string email;
-        std::string telefon;
         std::string categorie;
         short instructorIndex;
         short oreClient;

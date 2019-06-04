@@ -116,7 +116,6 @@ void ManagerClienti::setOreClient()     // setter ore
         cin >> oreClient;
         cin.clear();
         cin.ignore(100, '\n');
-        // improve imput validation - 3f is passing
     }
     system("CLS");
 
@@ -129,13 +128,12 @@ void ManagerClienti::setInstructorIndex()   // tie with instructor index + updat
     short ore;
     short maxOre = 0;
 
-    // if ManagerInstructori::listaInstructori.get
-
      for (int index4 = 0; index4 < ManagerInstructori::listaInstructori.size(); index4++)
                 {
                     maxOre = maxOre + ManagerInstructori::listaInstructori[index4].getOre();
                 }
-if (maxOre * ManagerInstructori::listaInstructori.size()  >= 40 * ManagerInstructori::listaInstructori.size())
+
+if (maxOre >= 40 * ManagerInstructori::listaInstructori.size())
 {
 
     system("CLS");
@@ -146,6 +144,8 @@ if (maxOre * ManagerInstructori::listaInstructori.size()  >= 40 * ManagerInstruc
     ofstream contact2file ("Contact Clienti.txt", ios::out | ios::app);
     contact2file << contact << endl;
     contact2file.close();
+    cout << "Va multumim!" << endl;
+    system("pause");
     system("CLS");
     return;
 }
@@ -203,15 +203,19 @@ void ManagerClienti::addClient()        // add client
          setCategorie();
          setOreClient();
          setInstructorIndex();
+         if (instructorIndex != 0)
+           {
+                Client Mike {numeClient, categorie, oreClient, instructorIndex};
+                listaClienti.push_back(Mike);
+                writeClients();
+           }
 
-         Client Mike {numeClient, categorie, oreClient, instructorIndex};
-         listaClienti.push_back(Mike);
-         writeClients();
+
 
 
 }
 
-void ManagerClienti::displayInstructor()    // display instructor list - maybe delete
+void ManagerClienti::displayInstructor()    // display instructor list
 {
         cout << "Index" << setw(15) << "Nume Instructor" << setw(15) << "Ore" << setw(15) << "Cod Unic" << endl;
     for (int index = 0; index < ManagerInstructori::listaInstructori.size(); index++)
@@ -266,8 +270,13 @@ void ManagerClienti::displayInstructor()    // display instructor list - maybe d
             if (ManagerInstructori::listaInstructori[index].getCodUnic() != listaClienti[index2].getInstructorIndex())
             {
                 continue;
-            }
+            }else if (listaClienti[index2].getNumeClient() != "JonSnow")
+                {
                 cout << setw(25) << listaClienti[index2].getNumeClient() << setw(45) << listaClienti[index2].getCategorie() << setw(24) << listaClienti[index2].getOreClient() << endl;
+                }else
+                {
+                    cout << setw(25) << listaClienti[index2].getNumeClient() << setw(45) << listaClienti[index2].getCategorie() << setw(24) << listaClienti[index2].getOreClient() <<setw(25) << "Winter is coming!" << endl;
+                }
           }
         }
     system("pause");
