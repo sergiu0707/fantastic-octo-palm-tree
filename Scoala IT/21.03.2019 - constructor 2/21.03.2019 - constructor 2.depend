@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1553192305 source:c:\users\sergi\desktop\scoala it\21.03.2019 - constructor 2\main.cpp
+	<iostream>
+	"DeConstruit.h"
+
+1553189835 source:c:\users\sergi\desktop\scoala it\21.03.2019 - constructor 2\src\deconstruit.cpp
+	"DeConstruit.h"
+	<iostream>
+
+1553189582 c:\users\sergi\desktop\scoala it\21.03.2019 - constructor 2\include\deconstruit.h
+

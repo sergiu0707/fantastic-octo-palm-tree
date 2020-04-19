@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1553802479 source:c:\users\sergi\desktop\scoala it\28.03.2019 - destructor\main.cpp
+	<iostream>
+	<Copac.h>
+
+1553802168 source:c:\users\sergi\desktop\scoala it\28.03.2019 - destructor\src\copac.cpp
+	"Copac.h"
+	<iostream>
+
+1553801458 c:\users\sergi\desktop\scoala it\28.03.2019 - destructor\include\copac.h
+	<Creanga.h>
+
+1553801116 source:c:\users\sergi\desktop\scoala it\28.03.2019 - destructor\src\creanga.cpp
+	"Creanga.h"
+	<iostream>
+
+1553800993 c:\users\sergi\desktop\scoala it\28.03.2019 - destructor\include\creanga.h
+

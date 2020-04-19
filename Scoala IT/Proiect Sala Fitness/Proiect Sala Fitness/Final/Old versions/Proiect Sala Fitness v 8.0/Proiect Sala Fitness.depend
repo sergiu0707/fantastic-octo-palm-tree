@@ -1,0 +1,76 @@
+# depslib dependency file v1.0
+1558282468 source:c:\users\sergi\desktop\proiect sala fitness\proiect sala fitness\main.cpp
+	<iostream>
+	"Instructor.h"
+	"ManagerInstructori.h"
+
+1558280540 source:c:\users\sergi\desktop\proiect sala fitness\proiect sala fitness\src\instructor.cpp
+	"Instructor.h"
+	"ManagerInstructori.h"
+	<iostream>
+	<stdlib.h>
+	<time.h>
+	<vector>
+
+1558300451 c:\users\sergi\desktop\proiect sala fitness\proiect sala fitness\include\instructor.h
+	<string>
+	<vector>
+
+1558279420 source:c:\users\sergi\desktop\proiect sala fitness\proiect sala fitness\src\managerinstructori.cpp
+	"ManagerInstructori.h"
+	<iostream>
+
+1558300452 c:\users\sergi\desktop\proiect sala fitness\proiect sala fitness\include\managerinstructori.h
+	"Instructor.h"
+	<vector>
+
+1559391500 source:c:\users\sergi\desktop\scoala it\proiect sala fitness\proiect sala fitness\src\instructor.cpp
+	"Instructor.h"
+	"ManagerInstructori.h"
+	<iostream>
+
+1559418752 c:\users\sergi\desktop\scoala it\proiect sala fitness\proiect sala fitness\include\instructor.h
+	<string>
+	<vector>
+
+1559475296 c:\users\sergi\desktop\scoala it\proiect sala fitness\proiect sala fitness\include\managerinstructori.h
+	"ManagerInstructori.h"
+	"Instructor.h"
+	<vector>
+
+1559476614 source:c:\users\sergi\desktop\scoala it\proiect sala fitness\proiect sala fitness\main.cpp
+	<iostream>
+	"Instructor.h"
+	"ManagerInstructori.h"
+	"Client.h"
+	"ManagerClienti.h"
+
+1559475296 source:c:\users\sergi\desktop\scoala it\proiect sala fitness\proiect sala fitness\src\managerinstructori.cpp
+	"ManagerInstructori.h"
+	"Instructor.h"
+	<iostream>
+	<vector>
+	<fstream>
+	<stdlib.h>
+	<time.h>
+
+1559414251 source:c:\users\sergi\desktop\scoala it\proiect sala fitness\proiect sala fitness\src\client.cpp
+	"Client.h"
+
+1559414423 c:\users\sergi\desktop\scoala it\proiect sala fitness\proiect sala fitness\include\client.h
+	<string>
+	<vector>
+
+1559480347 source:c:\users\sergi\desktop\scoala it\proiect sala fitness\proiect sala fitness\src\managerclienti.cpp
+	"ManagerClienti.h"
+	"ManagerInstructori.h"
+	<algorithm>
+	<iostream>
+	<fstream>
+
+1559477356 c:\users\sergi\desktop\scoala it\proiect sala fitness\proiect sala fitness\include\managerclienti.h
+	"Client.h"
+	"ManagerInstructori.h"
+	<string>
+	<vector>
+

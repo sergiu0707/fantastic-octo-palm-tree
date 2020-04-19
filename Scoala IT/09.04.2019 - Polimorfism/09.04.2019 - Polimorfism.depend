@@ -1,0 +1,50 @@
+# depslib dependency file v1.0
+1555006589 source:c:\users\sergi\desktop\scoala it\09.04.2019 - polimorfism\main.cpp
+	<iostream>
+	"Vioara.h"
+	"Pian.h"
+	"Flaut.h"
+	"VioaraClasica.h"
+	"VioaraElectrica.h"
+
+1555006358 source:c:\users\sergi\desktop\scoala it\09.04.2019 - polimorfism\src\instrument.cpp
+	"Instrument.h"
+	<iostream>
+
+1555007097 c:\users\sergi\desktop\scoala it\09.04.2019 - polimorfism\include\instrument.h
+
+1555006407 source:c:\users\sergi\desktop\scoala it\09.04.2019 - polimorfism\src\vioara.cpp
+	"Vioara.h"
+	<iostream>
+
+1554835018 c:\users\sergi\desktop\scoala it\09.04.2019 - polimorfism\include\vioara.h
+	<Instrument.h>
+
+1555006381 source:c:\users\sergi\desktop\scoala it\09.04.2019 - polimorfism\src\flaut.cpp
+	"Flaut.h"
+	<iostream>
+
+1554832047 c:\users\sergi\desktop\scoala it\09.04.2019 - polimorfism\include\flaut.h
+	<Instrument.h>
+
+1555006401 source:c:\users\sergi\desktop\scoala it\09.04.2019 - polimorfism\src\pian.cpp
+	"Pian.h"
+	<iostream>
+
+1554832047 c:\users\sergi\desktop\scoala it\09.04.2019 - polimorfism\include\pian.h
+	<Instrument.h>
+
+1555006426 source:c:\users\sergi\desktop\scoala it\09.04.2019 - polimorfism\src\vioaraclasica.cpp
+	"VioaraClasica.h"
+	<iostream>
+
+1554834542 c:\users\sergi\desktop\scoala it\09.04.2019 - polimorfism\include\vioaraclasica.h
+	<Vioara.h>
+
+1555006423 source:c:\users\sergi\desktop\scoala it\09.04.2019 - polimorfism\src\vioaraelectrica.cpp
+	"VioaraElectrica.h"
+	<iostream>
+
+1554834500 c:\users\sergi\desktop\scoala it\09.04.2019 - polimorfism\include\vioaraelectrica.h
+	<Vioara.h>
+

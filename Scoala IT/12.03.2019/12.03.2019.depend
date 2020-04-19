@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1552418734 source:c:\users\sergi\desktop\scoala it\12.03.2019\src\masina.cpp
+	"Masina.h"
+
+1552418096 c:\users\sergi\desktop\scoala it\12.03.2019\include\masina.h
+
+1552419276 source:c:\users\sergi\desktop\scoala it\12.03.2019\main.cpp
+	<iostream>
+	"Masina.h"
+

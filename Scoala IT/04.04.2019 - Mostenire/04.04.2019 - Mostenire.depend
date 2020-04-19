@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1554403457 source:c:\users\sergi\desktop\scoala it\04.04.2019 - mostenire\main.cpp
+	<iostream>
+	"CDerivIar.h"
+
+1554402922 source:c:\users\sergi\desktop\scoala it\04.04.2019 - mostenire\src\cbaza.cpp
+	"CBaza.h"
+	<iostream>
+
+1554403333 c:\users\sergi\desktop\scoala it\04.04.2019 - mostenire\include\cbaza.h
+
+1554404106 source:c:\users\sergi\desktop\scoala it\04.04.2019 - mostenire\src\cderiv.cpp
+	"CDeriv.h"
+	<iostream>
+
+1554402670 c:\users\sergi\desktop\scoala it\04.04.2019 - mostenire\include\cderiv.h
+	<CBaza.h>
+
+1554404054 source:c:\users\sergi\desktop\scoala it\04.04.2019 - mostenire\src\cderiviar.cpp
+	"CDerivIar.h"
+	<iostream>
+
+1554402855 c:\users\sergi\desktop\scoala it\04.04.2019 - mostenire\include\cderiviar.h
+	<CDeriv.h>
+

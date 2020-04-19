@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1555612556 source:c:\users\sergi\desktop\o streams 2\18.04.2019 - i\main.cpp
+	<iostream>
+	<string>
+	<sstream>
+

@@ -1,0 +1,53 @@
+# depslib dependency file v1.0
+1558282468 source:c:\users\sergi\desktop\proiect sala fitness\proiect sala fitness\main.cpp
+	<iostream>
+	"Instructor.h"
+	"ManagerInstructori.h"
+
+1558280540 source:c:\users\sergi\desktop\proiect sala fitness\proiect sala fitness\src\instructor.cpp
+	"Instructor.h"
+	"ManagerInstructori.h"
+	<iostream>
+	<stdlib.h>
+	<time.h>
+	<vector>
+
+1558300451 c:\users\sergi\desktop\proiect sala fitness\proiect sala fitness\include\instructor.h
+	<string>
+	<vector>
+
+1558279420 source:c:\users\sergi\desktop\proiect sala fitness\proiect sala fitness\src\managerinstructori.cpp
+	"ManagerInstructori.h"
+	<iostream>
+
+1558300452 c:\users\sergi\desktop\proiect sala fitness\proiect sala fitness\include\managerinstructori.h
+	"Instructor.h"
+	<vector>
+
+1558986083 source:c:\users\sergi\desktop\scoala it\proiect sala fitness\proiect sala fitness\src\instructor.cpp
+	"Instructor.h"
+	"ManagerInstructori.h"
+	<iostream>
+	<stdlib.h>
+	<time.h>
+
+1559066009 c:\users\sergi\desktop\scoala it\proiect sala fitness\proiect sala fitness\include\instructor.h
+	<string>
+	<vector>
+
+1559069586 c:\users\sergi\desktop\scoala it\proiect sala fitness\proiect sala fitness\include\managerinstructori.h
+	"Instructor.h"
+	<vector>
+
+1559069699 source:c:\users\sergi\desktop\scoala it\proiect sala fitness\proiect sala fitness\main.cpp
+	<iostream>
+	"Instructor.h"
+	"ManagerInstructori.h"
+
+1559070839 source:c:\users\sergi\desktop\scoala it\proiect sala fitness\proiect sala fitness\src\managerinstructori.cpp
+	"ManagerInstructori.h"
+	"Instructor.h"
+	<iostream>
+	<vector>
+	<fstream>
+

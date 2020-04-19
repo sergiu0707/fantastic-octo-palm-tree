@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1551374474 source:c:\users\sergi\desktop\scoala it\26.02.2019 - supraincarcarea functiilor\main.cpp
+	<iostream>
+	"Combinari.h"
+
+1551203959 source:c:\users\sergi\desktop\scoala it\26.02.2019 - supraincarcarea functiilor\factorial.cpp
+
+1551374422 source:c:\users\sergi\desktop\scoala it\26.02.2019 - supraincarcarea functiilor\combinari.cpp
+	"Factorial.h"
+
+1551374105 c:\users\sergi\desktop\scoala it\26.02.2019 - supraincarcarea functiilor\factorial.h
+
+1551374224 c:\users\sergi\desktop\scoala it\26.02.2019 - supraincarcarea functiilor\combinari.h
+

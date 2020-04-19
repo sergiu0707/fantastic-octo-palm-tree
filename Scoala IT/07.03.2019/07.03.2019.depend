@@ -1,0 +1,28 @@
+# depslib dependency file v1.0
+1551979006 source:c:\users\sergi\desktop\scoala it\05.03.2019 -obiecte\main.cpp
+	<iostream>
+	"Segment.h"
+
+1551811583 source:c:\users\sergi\desktop\scoala it\05.03.2019 -obiecte\src\segment.cpp
+	"Segment.h"
+	<cmath>
+
+1551810058 c:\users\sergi\desktop\scoala it\05.03.2019 -obiecte\include\segment.h
+
+1551984404 source:c:\users\sergi\desktop\scoala it\07.03.2019\main.cpp
+	<iostream>
+	"Segment.h"
+	"Triunghi.h"
+
+1551810058 c:\users\sergi\desktop\scoala it\07.03.2019\include\segment.h
+
+1551811583 source:c:\users\sergi\desktop\scoala it\07.03.2019\src\segment.cpp
+	"Segment.h"
+	<cmath>
+
+1551982986 source:c:\users\sergi\desktop\scoala it\07.03.2019\src\triunghi.cpp
+	"Triunghi.h"
+
+1551980650 c:\users\sergi\desktop\scoala it\07.03.2019\include\triunghi.h
+	"Segment.h"
+

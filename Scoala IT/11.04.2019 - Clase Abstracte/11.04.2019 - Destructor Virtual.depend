@@ -1,0 +1,41 @@
+# depslib dependency file v1.0
+1555442307 source:c:\users\sergi\desktop\scoala it\11.04.2019 - clase abstracte\main.cpp
+	<iostream>
+	"Dreptunghi.h"
+	"TrDrept.h"
+	"Poligon.h"
+
+1555441218 source:c:\users\sergi\desktop\scoala it\11.04.2019 - clase abstracte\src\poligon.cpp
+	"Poligon.h"
+	"iostream"
+
+1555440203 c:\users\sergi\desktop\scoala it\11.04.2019 - clase abstracte\include\poligon.h
+
+1555437329 source:c:\users\sergi\desktop\scoala it\11.04.2019 - clase abstracte\triunghi.cpp
+	"Triunghi.h"
+	"iostream"
+
+1555437304 c:\users\sergi\desktop\scoala it\11.04.2019 - clase abstracte\include\triunghi.h
+	<Poligon.h>
+
+1555440449 source:c:\users\sergi\desktop\scoala it\11.04.2019 - clase abstracte\src\patrulater.cpp
+	"Patrulater.h"
+	"iostream"
+
+1555440500 c:\users\sergi\desktop\scoala it\11.04.2019 - clase abstracte\include\patrulater.h
+	<Poligon.h>
+
+1555438638 source:c:\users\sergi\desktop\scoala it\11.04.2019 - clase abstracte\src\trdrept.cpp
+	"TrDrept.h"
+	"iostream"
+
+1555438033 c:\users\sergi\desktop\scoala it\11.04.2019 - clase abstracte\include\trdrept.h
+	<Triunghi.h>
+
+1555439635 source:c:\users\sergi\desktop\scoala it\11.04.2019 - clase abstracte\src\dreptunghi.cpp
+	"Dreptunghi.h"
+	"iostream"
+
+1555439623 c:\users\sergi\desktop\scoala it\11.04.2019 - clase abstracte\include\dreptunghi.h
+	<Patrulater.h>
+

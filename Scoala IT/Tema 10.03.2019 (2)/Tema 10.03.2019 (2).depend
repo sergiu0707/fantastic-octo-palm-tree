@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1552245471 source:c:\users\sergi\desktop\scoala it\tema 10.03.2019 (2)\src\operatii.cpp
+	"Operatii.h"
+
+1552245233 c:\users\sergi\desktop\scoala it\tema 10.03.2019 (2)\include\operatii.h
+
+1552247134 source:c:\users\sergi\desktop\scoala it\tema 10.03.2019 (2)\main.cpp
+	<iostream>
+	"Operatii.h"
+

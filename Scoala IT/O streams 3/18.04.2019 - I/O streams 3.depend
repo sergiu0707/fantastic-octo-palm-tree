@@ -1,0 +1,26 @@
+# depslib dependency file v1.0
+1555614767 source:c:\users\sergi\desktop\o streams 3\18.04.2019 - i\main.cpp
+	<iostream>
+	"Ser.h"
+	"fstream"
+
+1555614264 source:c:\users\sergi\desktop\o streams 3\18.04.2019 - i\src\ser.cpp
+	"Ser.h"
+	"ostream"
+
+1555614159 c:\users\sergi\desktop\o streams 3\18.04.2019 - i\include\ser.h
+	<ostream>
+
+1556043485 source:c:\users\sergi\desktop\scoala it\o streams 3\18.04.2019 - i\main.cpp
+	<iostream>
+	"Ser.h"
+	<fstream>
+	<sstream>
+
+1555614159 c:\users\sergi\desktop\scoala it\o streams 3\18.04.2019 - i\include\ser.h
+	<ostream>
+
+1555614264 source:c:\users\sergi\desktop\scoala it\o streams 3\18.04.2019 - i\src\ser.cpp
+	"Ser.h"
+	"ostream"
+

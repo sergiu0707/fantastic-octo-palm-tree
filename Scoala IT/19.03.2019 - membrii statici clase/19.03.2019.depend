@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1553017908 source:c:\users\sergi\desktop\scoala it\19.03.2019\main.cpp
+	<iostream>
+	"Ecstatic.h"
+
+1553017133 source:c:\users\sergi\desktop\scoala it\19.03.2019\src\ecstatic.cpp
+	"Ecstatic.h"
+	<iostream>
+
+1553016723 c:\users\sergi\desktop\scoala it\19.03.2019\include\ecstatic.h
+
+1553020733 source:c:\users\sergi\desktop\scoala it\19.03.2019 - membrii statici clase\src\ecstatic.cpp
+	"Ecstatic.h"
+	<iostream>
+
+1553022888 c:\users\sergi\desktop\scoala it\19.03.2019 - membrii statici clase\include\ecstatic.h
+
+1553022883 source:c:\users\sergi\desktop\scoala it\19.03.2019 - membrii statici clase\main.cpp
+	<iostream>
+	"Ecstatic.h"
+

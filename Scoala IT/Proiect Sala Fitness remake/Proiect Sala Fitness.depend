@@ -1,0 +1,84 @@
+# depslib dependency file v1.0
+1558282468 source:c:\users\sergi\desktop\proiect sala fitness\proiect sala fitness\main.cpp
+	<iostream>
+	"Instructor.h"
+	"ManagerInstructori.h"
+
+1558280540 source:c:\users\sergi\desktop\proiect sala fitness\proiect sala fitness\src\instructor.cpp
+	"Instructor.h"
+	"ManagerInstructori.h"
+	<iostream>
+	<stdlib.h>
+	<time.h>
+	<vector>
+
+1558300451 c:\users\sergi\desktop\proiect sala fitness\proiect sala fitness\include\instructor.h
+	<string>
+	<vector>
+
+1558279420 source:c:\users\sergi\desktop\proiect sala fitness\proiect sala fitness\src\managerinstructori.cpp
+	"ManagerInstructori.h"
+	<iostream>
+
+1558300452 c:\users\sergi\desktop\proiect sala fitness\proiect sala fitness\include\managerinstructori.h
+	"Instructor.h"
+	<vector>
+
+1558961982 source:c:\users\sergi\desktop\scoala it\proiect sala fitness\proiect sala fitness\src\instructor.cpp
+	"Instructor.h"
+	"ManagerInstructori.h"
+	<iostream>
+	<stdlib.h>
+	<time.h>
+
+1558877049 c:\users\sergi\desktop\scoala it\proiect sala fitness\proiect sala fitness\include\instructor.h
+	<string>
+	<vector>
+	"ManagerInstructori.h"
+
+1558963204 c:\users\sergi\desktop\scoala it\proiect sala fitness\proiect sala fitness\include\managerinstructori.h
+	"Instructor.h"
+	<vector>
+
+1558961983 source:c:\users\sergi\desktop\scoala it\proiect sala fitness\proiect sala fitness\main.cpp
+	<iostream>
+	"Instructor.h"
+	"ManagerInstructori.h"
+
+1558959372 source:c:\users\sergi\desktop\scoala it\proiect sala fitness\proiect sala fitness\src\managerinstructori.cpp
+	"ManagerInstructori.h"
+	"Instructor.h"
+	<iostream>
+	<vector>
+	<fstream>
+
+1558965470 source:c:\users\sergi\desktop\scoala it\proiect sala fitness remake\main.cpp
+	<iostream>
+	"Instructor.h"
+	"ManagerInstructori.h"
+
+1558963953 c:\users\sergi\desktop\scoala it\proiect sala fitness remake\include\instructor.h
+	<string>
+	<vector>
+	"ManagerInstructori.h"
+
+1558965052 c:\users\sergi\desktop\scoala it\proiect sala fitness remake\include\managerinstructori.h
+	"Instructor.h"
+	<vector>
+
+1558964204 source:c:\users\sergi\desktop\scoala it\proiect sala fitness remake\src\instructor.cpp
+	"Instructor.h"
+	"ManagerInstructori.h"
+	<iostream>
+	<stdlib.h>
+	<time.h>
+
+1558964669 source:c:\users\sergi\desktop\scoala it\proiect sala fitness remake\src\managerinstructori.cpp
+	"ManagerInstructori.h"
+	"Instructor.h"
+	<iostream>
+	<vector>
+	<fstream>
+	<stdlib.h>
+	<time.h>
+

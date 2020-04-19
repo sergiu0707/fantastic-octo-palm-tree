@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1558030655 source:c:\users\sergi\desktop\scoala it\16.05.2019 - operator overload\main.cpp
+	<iostream>
+	"Fractie.h"
+
+1558030120 source:c:\users\sergi\desktop\scoala it\16.05.2019 - operator overload\src\fractie.cpp
+	"Fractie.h"
+
+1558030013 c:\users\sergi\desktop\scoala it\16.05.2019 - operator overload\include\fractie.h
+	<iostream>
+

@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1555611601 source:c:\users\sergi\desktop\scoala it\18.04.2019 - io stream\main.cpp
+	<iostream>
+	<sstream>
+	<fstream>
+

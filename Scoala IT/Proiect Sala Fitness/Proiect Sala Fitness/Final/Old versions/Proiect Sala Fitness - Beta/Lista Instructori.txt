@@ -1,0 +1,10 @@
+Instructor1 40 640
+Instructor2 40 672
+Instructor3 40 673
+Instructor4 40 674
+Instructor5 40 675
+Instructor6 40 646
+Instructor7 40 677
+Instructor8 40 678
+Instructor9 40 679
+Instructor10 40 671

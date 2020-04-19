@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1551979006 source:c:\users\sergi\desktop\scoala it\05.03.2019 -obiecte\main.cpp
+	<iostream>
+	"Segment.h"
+
+1551811583 source:c:\users\sergi\desktop\scoala it\05.03.2019 -obiecte\src\segment.cpp
+	"Segment.h"
+	<cmath>
+
+1551810058 c:\users\sergi\desktop\scoala it\05.03.2019 -obiecte\include\segment.h
+

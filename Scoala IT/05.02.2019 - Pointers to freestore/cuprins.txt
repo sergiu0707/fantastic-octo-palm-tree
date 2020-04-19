@@ -1,0 +1,3 @@
+pointer 2
+referinte 
+tablouri de date

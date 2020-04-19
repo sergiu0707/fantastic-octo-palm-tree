@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1553020528 source:c:\users\sergi\desktop\scoala it\19.03.2019 - constructor\main.cpp
+	<iostream>
+	"CtorImplicit.h"
+
+1553020138 source:c:\users\sergi\desktop\scoala it\19.03.2019 - constructor\src\ctorimplicit.cpp
+	"CtorImplicit.h"
+
+1553020253 c:\users\sergi\desktop\scoala it\19.03.2019 - constructor\include\ctorimplicit.h
+

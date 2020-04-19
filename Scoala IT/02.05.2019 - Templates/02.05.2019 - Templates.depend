@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1559415221 source:c:\users\sergi\desktop\scoala it\02.05.2019 - templates\main.cpp
+	<iostream>
+	<algorithm>
+	"Pereche.h"
+	<vector>
+	<stdlib.h>
+	<time.h>
+	<cmath>
+
+1556821856 c:\users\sergi\desktop\scoala it\02.05.2019 - templates\include\pereche.h
+

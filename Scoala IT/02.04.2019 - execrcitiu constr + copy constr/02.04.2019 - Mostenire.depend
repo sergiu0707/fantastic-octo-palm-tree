@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1554226439 source:c:\users\sergi\desktop\scoala it\02.04.2019 - mostenire\main.cpp
+	<iostream>
+	<X.h>
+
+1554224700 source:c:\users\sergi\desktop\scoala it\02.04.2019 - mostenire\src\x.cpp
+	"X.h"
+	<iostream>
+
+1554226781 c:\users\sergi\desktop\scoala it\02.04.2019 - mostenire\include\x.h
+

@@ -1,0 +1,57 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace Spanzuratoarea
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string initialTextString = "m----a";
+            Start:
+            Console.Write(initialTextString + "\n");//afisare
+            var initialText = initialTextString.ToList();//conversie in lista de caractere
+            List<char> charList = new List<char> { 'a', 's', 'i', 'n' };//lista cu optiuni bune
+
+            Console.Write("Press any key...\n");
+            var keyPressed = Console.ReadKey();//valoarea stocata a key pressed
+            Console.Write("\n");
+            char key = keyPressed.KeyChar; //pasare valoare in key
+
+            if (charList.Contains(key))//verificare ca contine caracterul
+            {
+                charList.Remove(key);//scoatere caracter
+                switch (key)
+                {
+                    case 'a':
+                        initialText[1] = key;
+                        break;
+                    case 's':
+                        initialText[2] = key;
+                        break;
+                    case 'i':
+                        initialText[3] = key;
+                        break;
+                    case 'n':
+                        initialText[4] = key;
+                        break;
+                    default:
+                        break;
+                }
+            }
+            else
+            {
+                Console.WriteLine("Key was not found");
+            }
+            var result = string.Empty;//""
+            for (int i = 0/*pasul 1*/; i < initialText.Count/*verificare*/; i++/*incremetare pasul 3*/)
+            {
+                result = result + initialText[i];//pasul 2 initialtest[0] = m
+            }
+
+            initialTextString = result; //atribuire initialTextString cu result
+            goto Start;
+        }
+    }
+}

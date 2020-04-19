@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1514144174 source:c:\users\sergi\desktop\scoala it\11.04.2019 - clase abstracte\main.cpp
+	<iostream>
+
+1555435993 source:c:\users\sergi\desktop\scoala it\11.04.2019 - clase abstracte\src\poligon.cpp
+	"Poligon.h"
+
+1555009224 c:\users\sergi\desktop\scoala it\11.04.2019 - clase abstracte\include\poligon.h
+
+1555436907 source:c:\users\sergi\desktop\scoala it\11.04.2019 - clase abstracte\triunghi.cpp
+	"Triunghi.h"
+
+1555436156 c:\users\sergi\desktop\scoala it\11.04.2019 - clase abstracte\include\triunghi.h
+	<Poligon.h>
+
